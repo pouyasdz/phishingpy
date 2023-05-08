@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+body{
+    direction: rtl;
+    background-color: #edf2f4;
+    font-family: vazirmatn;
+    box-sizing: border-box;
+    
+}
+
+h1{
+    font-size: 25px;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 5vh;
+    background-color: #ffffff48;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    display: flex;
+    backdrop-filter: blur(100px);
+
+}
+
+.navbar ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.navbar li{
+    cursor: pointer;
+}
+
+.container{
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 10vh 25px 25px 25px;
+}
+
+@media only screen and (max-width:600px) {
+    .title{
+        width: 100% !important;
+        height: 200px !important;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .prof-image{
+        width: 70px !important;
+        height: 70px !important;
+    }
+}
+
+
+.waved{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.title{
+    width: 300px;
+    height: 350px;
+    background-color: #ffffff54;
+    z-index: 1;
+    
+    box-sizing: border-box;
+    border-radius: 15px;
+    backdrop-filter: blur(50px);
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    line-height: 25px;
+    animation: fade 0.5s;
+    
+}
+
+
+@keyframes fade{
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+.title button{
+    width: 100px;
+    height: 30px;
+    font-family: vazirmatn;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ef233c;
+    color: #edf2f4;
+}
+
+.profile{
+    width: 100%;
+    height: 15vh;
+    background-color: #edf2f4;
+    
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #bebebe;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    direction: ltr;
+    gap: 10px;
+}
+.prof-image{
+    width: 100px;
+    height: 100px;
+    border: 5px solid rgb(255, 5, 213);
+    border-radius: 50%;
+    background-image: url('https://img.freepik.com/free-photo/funny-european-man-has-pleased-expression-smiles-joyfully-wears-optical-glasses-rosy-jumper-hears-good-news-isolated-yellow-wall-express-good-emotions-male-nerd-spectacles_273609-42361.jpg?w=1380&t=st=1683497950~exp=1683498550~hmac=25acde79fdeda5cb133c99645fd7aa3d592c2e68cfc38a4742552d08eb847268');
+    background-position: center;
+    background-size: cover;
+}
+
+.uname-follower{
+    display: grid;
+    gap: 20px;
+}
+
+#titr{
+    background-color: #ef233c;
+    width: max-content;
+    padding: 15px;
+    border-radius: 12px;
+    color: #edf2f4;
+    margin-top: 20px;
+}

