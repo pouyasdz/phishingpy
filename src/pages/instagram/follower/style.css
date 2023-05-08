@@ -7,7 +7,7 @@ body{
     
 }
 
-h1{
+h3{
     font-size: 25px;
 }
 
@@ -41,10 +41,21 @@ h1{
     max-width: 100%;
     overflow-x: hidden;
     width: 100%;
+    display: flex;
+    padding: 10vh 25px 25px 25px;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.top-section{
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    padding: 10vh 25px 25px 25px;
+    gap: 20px;
+    max-height: 100vh;
+    margin-bottom: "50%";
 }
 
 @media only screen and (max-width:600px) {
@@ -52,10 +63,11 @@ h1{
         width: 100% !important;
         height: 200px !important;
     }
-    .container{
+    .top-section{
         display: flex;
         flex-direction: column;
         gap: 20px;
+        
     }
     .prof-image{
         width: 70px !important;
@@ -63,6 +75,12 @@ h1{
     }
 }
 
+@media only screen and (max-width:800px){
+    .top-section{
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
 
 .waved{
     position: fixed;
@@ -71,8 +89,8 @@ h1{
 }
 
 .title{
-    width: 300px;
-    height: 350px;
+    width: 100%;
+    height: 20vh;
     background-color: #ffffff54;
     z-index: 1;
     
@@ -107,13 +125,11 @@ h1{
 
 .profile{
     width: 100%;
-    height: 15vh;
+    height: 20vh;
     background-color: #edf2f4;
     
     box-sizing: border-box;
     border-radius: 15px;
-    box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #bebebe;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -135,11 +151,93 @@ h1{
     gap: 20px;
 }
 
-#titr{
-    background-color: #ef233c;
-    width: max-content;
-    padding: 15px;
-    border-radius: 12px;
+
+
+.first-charg{
+    width: 100%;
+    height: 20vh;
+    background-color: #2b2d42;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 20px;
     color: #edf2f4;
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.first-charg button{
+    width: 150px;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: vazirmatn;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.first-charg button:hover{
+    background-color: #90be6d;
+    color: white;
+}
+
+.main-form{
+    width: max-content;
+    height: 50vh;
+    background-color: #2b2d42;
+    margin-top: 5%;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.main-form form{
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    border: 2px solid white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 12px;
+}
+
+.main-form input{
+    width: calc(100% - 10px);
+    height: 35px;
+    border: none;
+    outline: none;
+    direction: ltr;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.main-form .submit{
+    margin-top: auto;
+    height: 5vh;
+    border-radius: 12px;
+    border: 2px solid white;
+    background-color: #ffffff00;
+    color: white;
+    font-family: vazirmatn;
+    cursor: pointer;
+}
+
+.notification{
+    width: 400px;
+    margin: 0 auto;
+    background-color: #ffca3a;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px;
 }
