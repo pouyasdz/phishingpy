@@ -9,6 +9,7 @@
  ### Installation
  
  - jus clone this repository
+ - install php
  - [install python](https://www.python.org/)
  - [install ngrok](https://ngrok.com/)
  - config your ngrok
