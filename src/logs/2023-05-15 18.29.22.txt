@@ -1,0 +1,5 @@
+platform = instagram
+
+ username: lamo
+
+password: 1231424
